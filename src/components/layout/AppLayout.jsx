@@ -1,3 +1,4 @@
+import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 function AppLayout({ children }) {
@@ -6,9 +7,7 @@ function AppLayout({ children }) {
       <Sidebar />
 
       <main className="flex-1 flex flex-col">
-        <header className="h-14 bg-white border-b border-slate-200 flex items-center px-4">
-          Header
-        </header>
+        <Header />
 
         <section className="flex-1 p-4">{children}</section>
       </main>
